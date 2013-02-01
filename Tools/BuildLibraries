@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby
+
+BUILD_OUTPUT_DIR = "BuildGen"
+
+def xcode_command(target_name, sdk)
+    system("xcodebuild -target #{target_name} -sdk #{sdk} -configuration Release CONFIGURATION_BUILD_DIR=#{BUILD_OUTPUT_DIR} PRODUCT_NAME=#{target_name}#{sdk}")
+    "#{BUILD_OUTPUT_DIR}/lib#{target_name}#{sdk}.a"
+end
+
+def lipo_command(target_name, libs)
+    system("mkdir #{BUILD_OUTPUT_DIR}/Release")
+    system("lipo -create #{libs.join(' ')} -output #{BUILD_OUTPUT_DIR}/lib#{target_name}Universal.a")
+    system("cp #{BUILD_OUTPUT_DIR}/lib#{target_name}Universal.a #{BUILD_OUTPUT_DIR}/Release/lib#{target_name}.a")
+end
+
+def build_target(target_name)
+    libs = []
+    libs << xcode_command(target_name, "iphoneos")
+    libs << xcode_command(target_name, "iphonesimulator")
+    lipo_command(target_name, libs)
+end
+
+system("rm -rf #{BUILD_OUTPUT_DIR}")
+
+# Base Library
+build_target('Detective')
+
+# Cocos2D Aspect
+build_target('DetectiveCocos2D')
