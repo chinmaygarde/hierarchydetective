@@ -7,6 +7,7 @@
 
 @implementation HDUIKitDetective
 
+#ifndef HD_MANUAL_LIFECYCLE_MANAGEMENT
 +(void) load {
   @autoreleasepool {
     static dispatch_once_t onceToken;
@@ -16,6 +17,7 @@
     });
   }
 }
+#endif
 
 -(UIView *) findViewInAllWindows:(NSInteger) pointerValue {
   UIView *selectedView = nil;

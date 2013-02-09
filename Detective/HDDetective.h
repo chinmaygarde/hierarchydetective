@@ -13,4 +13,7 @@ typedef void(^HDCommandProcessCompletionHandler)(NSError *);
 
 @interface HDDetective : NSObject <HDDetectiveCommandDelegate>
 
+-(void) activate;
+-(void) deactive;
+
 @end

@@ -10,17 +10,29 @@
 -(id) init {
   self = [super init];
   if (self) {
+#ifndef HD_MANUAL_LIFECYCLE_MANAGEMENT
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationActive:) name:UIApplicationDidBecomeActiveNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationInactive:) name:UIApplicationWillResignActiveNotification object:nil];
+#endif
   }
   return self;
 }
 
+#ifndef HD_MANUAL_LIFECYCLE_MANAGEMENT
 -(void) applicationActive:(NSNotification *) notification {
-  server = [[HDServer alloc] initWithDelegate:self];
+  [self activate];
 }
 
 -(void) applicationInactive:(NSNotification *) notification {
+  [self deactive];
+}
+#endif
+
+-(void) activate {
+  server = [[HDServer alloc] initWithDelegate:self];
+}
+
+-(void) deactive {
   server = nil;
 }
 

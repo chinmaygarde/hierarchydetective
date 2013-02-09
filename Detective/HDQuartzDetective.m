@@ -5,6 +5,7 @@
 
 @implementation HDQuartzDetective
 
+#ifndef HD_MANUAL_LIFECYCLE_MANAGEMENT
 +(void) load {
   @autoreleasepool {
     static dispatch_once_t onceToken;
@@ -14,6 +15,7 @@
     });
   }
 }
+#endif
 
 -(CALayer *) findLayerInAllWindows:(NSInteger) pointerValue {
   CALayer *selectedLayer = nil;

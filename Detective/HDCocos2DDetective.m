@@ -6,6 +6,7 @@
 
 @implementation HDCocos2DDetective
 
+#ifndef HD_MANUAL_LIFECYCLE_MANAGEMENT
 +(void) load {
   static dispatch_once_t onceToken;
   static HDCocos2DDetective *detective = nil;
@@ -13,6 +14,7 @@
     detective = [[HDCocos2DDetective alloc] init];
   });
 }
+#endif
 
 -(void) processCommand:(HDMessage *)message withCompletionHandler:(HDCommandProcessCompletionHandler)completionHandler {
 
