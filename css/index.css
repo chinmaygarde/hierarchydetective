@@ -1,0 +1,623 @@
+/* Main Slider
+-------------------------------------------------- */
+#feature_slider {
+    height:720px;
+    height: 480px;
+    background: #262626;
+    z-index: 1;
+    margin-bottom: 40px;
+}
+#feature_slider h1 {
+    font-weight: 100;
+    color: #ccc;
+    font-size: 60px;
+    line-height: 66px;
+    text-align: center;
+    position: absolute;
+    top: 180px;
+    width: 100%;
+}
+#feature_slider h1 strong {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0 0 20px;
+}
+#pagination {
+    position: absolute;
+    top: 505px;
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+    display: none;
+    list-style-type: none;
+}
+#pagination li {
+    text-indent: -99999em;
+    float: left;
+    padding: 0 6px;
+    cursor: pointer;
+}
+#pagination li a {
+    width: 7px;
+    height: 7px;
+    box-shadow: 0px 0px 1px 2px #ccc;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    display: block;
+    /*border: 1px solid #fff;*/
+    opacity: .7;
+    -webkit-transition: opacity .1s linear;
+    -moz-transition: opacity .1s linear;
+    transition: opacity .1s linear;
+}
+#pagination li.active a {
+    background: rgb(46, 92, 177);
+    box-shadow: none;
+    width: 8px;
+    height: 8px;
+}
+
+#pagination li:hover a {
+    opacity: 1;
+}
+.slide {
+    width: 100%;
+    /*height: 720px;*/
+    height: 480px;
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    z-index: 1;
+}
+.slide.previous {
+    z-index: 1;
+}
+.slide.active {
+    z-index: 2;
+}
+.slide.hiddden {
+    display: none;
+}
+
+/* Custom styles for each slide */
+
+/* Slide 1 */
+.slide#showcasing .info {
+    position: absolute;
+    top: 160px;
+    left: 13%;
+    width: 30%;
+    display: none;
+    z-index: 10;
+}
+.slide#showcasing .info h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: normal;
+    line-height: 56px;
+    text-shadow: 1px 1px 1px rgb(49, 57, 61);
+}
+/* Slide 2 */
+.slide#ideas .info {
+    position: relative;
+    top: 110px;
+    text-align: center;
+}
+.slide#ideas .info h2 {
+    color: #fff;
+    font-weight: normal;
+}
+
+/* Slide 3 */
+.slide#tour .info {
+    position: absolute;
+    top: 270px;
+    right: 6%;
+    width: 45%;
+}
+.slide#tour .info h2 {
+    color: #fff;
+    font-size: 45px;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px #3b3262;
+    line-height: 57px;
+}
+.slide#tour .info a {
+    color: #fff;
+    font-weight: bold;
+    background-color: #444;
+    padding: 13px 30px;
+    font-size: 19px;
+    border-radius: 5px;
+    margin-top: 0px;
+    display: inline-block;
+    -webkit-transition: opacity .1s linear;
+    -moz-transition: opacity .1s linear;
+    transition: opacity .1s linear;
+}
+.slide#tour .info a:hover { }
+
+/* Slide 4 */
+.slide#responsive .info {
+    position: absolute;
+    top: 170px;
+    right: 9%;
+    width: 25%;
+}
+.slide#responsive .info h2 {
+    color: #fff;
+    font-size: 47px;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px #3b3262;
+    line-height: 56px;
+}
+.slide#responsive .info h2 strong {
+    font-size: 42px;
+}
+
+.slide .info h2 { }
+.slide .info {
+    display: none;
+    z-index: 10;
+}
+.slide .info a:hover {
+    opacity: .8;
+}
+.asset,
+.fade {
+    position: absolute;
+    display: none;
+}
+#slide-left,
+#slide-right {
+    width: 31px;
+    height: 37px;
+    display: block;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    background: url(../img/leftright-arrows.png) no-repeat;
+    opacity: .5;
+    -webkit-transition: opacity .1s linear;
+    -moz-transition: opacity .1s linear;
+    transition: opacity .1s linear;
+    display: none;
+    z-index: 2;
+}
+#slide-right {
+    left: auto;
+    right: 0;
+    background-position: -31px 0;
+}
+#slide-left:hover,
+#slide-right:hover {
+    opacity: 1;
+}
+
+
+/* Showcase services
+-------------------------------------------------- */
+#showcase {
+    margin-top: 70px;
+}
+#showcase .container {
+    /*width: 980px;*/
+}
+#showcase .image img {
+    box-shadow: 3px 3px 5px 0px #B7B6B7;
+}
+#showcase .info {
+    margin-top: 30px;
+}
+#showcase .info h4 {
+    font-size: 17px;
+}
+#showcase .info p {
+    color: #333333;
+    line-height: 21px;
+    font-size: 13px;
+}
+#showcase .features_op1_row .last{
+    margin-right: 0;
+}
+#showcase .features_op1_row .feature .text{
+    margin: 32px auto 0;
+    width: 87%;
+}
+#showcase .features_op1_row .feature .text h6{
+    margin: 0 0 14px 0;
+    font-size: 20px;
+}
+#showcase .features_op1_row .feature .text p{
+    margin: 0;
+    font-size: 14px;
+    line-height: 23px;
+}
+#showcase .features_op1_row .feature .img_box{
+    position: relative;
+    border-radius: 5px;
+}
+#showcase .features_op1_row .feature .img_box img {
+    border-radius: 5px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: block;
+}
+#showcase .features_op1_row .feature .img_box span.circle{
+    background: rgba(17, 137, 217, 0.8);
+    width: 48px;
+    height: 48px;
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 36%;
+    left: 42%;
+    border-radius: 100%;
+}
+#showcase .features_op1_row .feature .img_box span.circle span.plus{
+    display: inline-block;
+    margin-top: 13px;
+    font-weight: bold;
+    color: white;
+    font-size: 32px;
+}
+#showcase .features_op1_row .feature .img_box:hover span.circle{
+    display: block;
+}
+#showcase .features_op1_row .feature .img_box:hover .img_box{
+    box-shadow: 0px 0px 1px 100px black inset;
+}
+#showcase .features_op1_row .feature .img_box:hover img{
+    box-shadow: 1px 1px 6px 0px #888;
+    border-radius: 5px;
+    opacity: 0.9;
+    filter:alpha(opacity=90);
+}
+
+/* Features
+-------------------------------------------------- */
+#features {
+    margin-top: 70px;
+    margin-bottom: -20px;
+}
+#features .feature {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 65px;
+}
+#features .feature .info h3 {
+    font-size: 21px;
+    margin-top: 35px;
+}
+#features .feature.ss h3 {
+    margin-top: 45px;
+}
+#features .feature .info h3 img {
+    margin-right: 18px;
+    position: relative;
+    top: -10px;
+}
+#features .feature .info p {
+    margin-top: 15px;
+}
+
+/* Pricing charts
+-------------------------------------------------- */
+
+#in_pricing{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+#in_pricing .head h6{
+    font-size: 18px;
+    margin: 0;
+    color: #8E8E8F;
+    font-weight: normal;
+}
+#in_pricing .charts_wrapp{
+    margin-left: -20px;
+    margin-bottom: 40px;
+}
+#in_pricing .charts_wrapp .plan{
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px -1px rgb(214, 214, 214);
+    background-color: #fff;
+    width: 95%;
+    position: relative;
+}
+#in_pricing .plan .wrapper{
+    padding: 33px 30px 26px 30px;
+}
+#in_pricing .plan h3{
+    color: rgb(83, 83, 83);
+    font-weight: normal;
+    font-style: italic;
+    font-size: 28px;
+    margin: 0 0 5px 0;
+    line-height: 25px;
+}
+#in_pricing .plan .price{
+    font-size: 17px;
+    color: #1189D9;
+    margin-top: 16px;
+}
+#in_pricing .plan .price span.dollar{
+    font-size: 32px;
+    position: relative;
+    top: -6px;
+    margin-right: 3px;
+}
+#in_pricing .plan .price span.qty{
+    font-size: 47px;
+    margin-right:4px;
+    position: relative;
+    top: 2px;
+}
+#in_pricing .plan .price span.month{
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+}
+#in_pricing .plan .features{
+    margin-top: 30px;
+}
+#in_pricing .plan .features p{
+    color: #838385;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+#in_pricing .plan a.order{
+    background-color: #2190DB;
+    text-align: center;
+    margin: 25px auto 0;
+    width: 48%;
+    display: block;
+    padding: 3px 0;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+}
+#in_pricing .plan a.order:hover,
+#in_pricing2 .plan a.order:hover{
+    background: #252528;
+}
+#in_pricing .pro .plan{
+    width: 100%;
+    top: -20px;
+    box-shadow: 0px 0px 7px -1px rgb(214, 214, 214);
+    border: 1px solid #d9d9d9;
+}
+#in_pricing .pro .plan .wrapper{
+    padding:36px 30px 35px 30px;
+}
+#in_pricing .pro .plan img.ribbon{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#in_pricing .pro .plan  a.order{
+    margin-top: 35px;
+}
+#in_pricing .standar .plan{
+    float: right;
+}
+#in_pricing .start{
+    width: 100%;
+    text-align: center;
+}
+#in_pricing .start p{
+    font-size: 24px;
+    display: inline-block;
+    color: #5B5B5D;
+    font-style: italic;
+    line-height: 26px;
+    margin: 0 18px 0 0;
+}
+#in_pricing .start a{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 7px 17px;
+    font-size: 17px;
+    background: #252528;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+}
+#in_pricing .start a:hover{
+    background: #2190DB;
+}
+
+/* Call to Action
+-------------------------------------------------- */
+#call_action {
+    margin-top: 50px;
+    text-align: center;
+}
+#call_action p {
+    font-size: 24px;
+    color: #3F3F3F;
+    font-style: italic;
+    display: inline-block;
+}
+#call_action a {
+    background-color: #282828;
+    color: #fff;
+    padding: 9px 17px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 17px;
+    margin-left: 20px;
+    position: relative;
+    top: -5px;
+    -webkit-transition: background-color .2s linear;
+    -moz-transition: background-color .2s linear;
+}
+#call_action a:hover {
+    background-color: rgb(103, 118, 177);
+}
+#call_action a:active {
+    box-shadow: rgba(255,255,255,0.2) 0 1px 0,inset rgba(0,0,0,0.95) 0 1px 4px;
+}
+
+/* Clients
+-------------------------------------------------- */
+#clients {
+    margin-top: 75px;
+}
+#clients .client .img {
+    height: 76px;
+    width: 138px;
+}
+#clients .client .client1 {
+    background: url('../img/client1.png') 0 -75px;
+}
+#clients .client .client1:hover {
+    background-position: 1px 0px;
+}
+#clients .client .client2 {
+    background: url('../img/client2.png') 0 -75px;
+}
+#clients .client .client2:hover {
+    background-position: -1px 0px;
+}
+#clients .client .client3 {
+    background: url('../img/client3.png') 0 -76px;
+}
+#clients .client .client3:hover {
+    background-position: 0px 0px;
+}
+#clients .client .img{
+    cursor: pointer;    
+    -webkit-transition: box-shadow .1s linear;
+    -moz-transition: box-shadow .1s linear;
+    transition: box-shadow .1s linear;
+}
+#clients .client .img:hover{
+    cursor: pointer;    
+    /*box-shadow: 0px 0px 2px 0px rgb(155, 155, 155);*/
+    border-radius: 8px;
+}
+
+
+/* Responsive
+-------------------------------------------------- */
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}
+@media (min-width: 980px) {
+    
+}
+@media (max-width: 979px) {
+    #showcase .features_op1_row .feature .img_box span.circle{
+        top: 35%;
+    }    
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+    #in_pricing .plan a.order{
+        width: 64%;
+    }
+    .slide .info h2,
+    .slide .info h2 * {
+        font-size: 30px !important;
+    }
+    .slide#responsive .info {
+        position: absolute;
+        top: 170px;
+        right: 6%;
+        width: 25%;
+    }
+    .slide#responsive .info 
+    .slide#tour .info a {
+        font-size: 15px;
+    }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    #partner-slider,
+    #feature_slider {
+        display: none;
+    }
+    #showcase .features_op1_row .feature {
+        margin-bottom: 60px;
+    }
+    #showcase .features_op1_row .last{
+        margin-bottom: 0;
+    }
+    #showcase .features_op1_row .feature .img_box{
+        text-align: center;
+    }
+    #showcase .features_op1_row .feature .text h6{
+        text-align: center;
+    }
+    #showcase .features_op1_row .feature .img_box span.circle{
+        top: 38%;
+        left: 48%;
+    }
+    #showcase .features_op1_row .feature:hover .img_box{
+        box-shadow:none;
+    }
+    #in_pricing .charts_wrapp{
+        margin-left: 0;
+    }
+    #in_pricing .charts_wrapp .plan{
+        margin: 0 auto 30px;
+        width: 95%;
+    }
+    #in_pricing .plan .wrapper{
+        margin: 0 auto;
+        text-align: center;
+    }
+    #in_pricing .pro .plan{
+        top: 0;
+        width:95%;
+    }
+    #in_pricing .standar .plan{
+        float: none;
+    }
+    #in_pricing .start p{
+        margin-bottom: 20px;
+    }
+    #in_pricing .start a{
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    #clients .row{
+        text-align: center;
+    }
+    #clients .client{
+        text-align: center;
+        margin-bottom: 15px;
+        display: inline-block;
+        margin-right: 10px;
+        width: auto;
+    }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    #showcase .features_op1_row .feature {
+        margin-bottom: 60px;
+    }
+    #showcase .features_op1_row .last{
+        margin-bottom: 0;
+    }
+    #showcase .features_op1_row .feature .img_box{
+        text-align: center;
+    }
+    #showcase .features_op1_row .feature .text h6{
+        text-align: left;
+    }
+    #showcase .features_op1_row .feature .img_box span.circle{
+        left: 44%;
+    }
+    #showcase .features_op1_row .feature:hover .img_box{
+        box-shadow:none;
+    }
+}
+

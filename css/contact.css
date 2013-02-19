@@ -1,0 +1,239 @@
+#contact {
+	margin-top: 70px;
+}
+#contact .contact{
+	margin: 40px 0 100px 0;
+}
+#contact .contact p{
+	color: #939394;
+	font-size: 19px;
+	margin-bottom: 47px;
+	font-style: italic;
+	line-height: 24px;
+}
+#contact .form{
+	margin: 0;
+}
+#contact .contact form{
+	margin: 0;
+}
+#contact .form .box{
+	margin: 0;
+}
+#contact .form .box input[type="text"]{
+	padding-left: 39px;
+	margin-bottom: 10px;
+	color: black;
+	height: 29px;
+	border-radius: 3px;
+	width: 89%;
+}
+#contact .form .box input.name{
+	background: url('../img/formname.png') #fff no-repeat 5px;
+}
+#contact .form .box input.mail{
+	background: url('../img/formmail.png') #fff no-repeat 5px;
+}
+#contact .form .box input.phone{
+	background: url('../img/formphone.png') #fff no-repeat 5px;
+}
+#contact .form .box_r{
+	float: right;
+}
+#contact .form .box textarea{
+	padding: 11px;
+	width: 94%;
+	margin: 0;
+	border-radius: 3px;
+	height: 113px;
+}
+#contact .contact .submit{
+	margin: 0;
+}
+#contact .contact .submit .box{
+	margin: 0
+}
+#contact .contact .submit label.checkbox{
+	color: #394350;
+	font-style: 14px;
+}
+#contact .contact .submit .right{
+	float: right;
+}
+#contact .contact .submit .right input[type="submit"]{
+	float: right;
+	text-transform: uppercase;
+	color: #fff;
+	background: #187CCC;
+	font-size: 15px;
+	padding: 4px 12px;
+	border: 0 none;
+	border-radius: 3px;
+	-webkit-transition: background linear .2s, box-shadow linear .2s;
+	-moz-transition: background linear .2s, box-shadow linear .2s;
+	-o-transition: background linear .2s, box-shadow linear .2s;
+	transition: background linear .2s, box-shadow linear .2s;
+}
+#contact .contact .submit .right input[type="submit"]:hover{
+	background: #252528;
+}
+#contact .map{
+	margin: 0;
+}
+#contact .map iframe{
+	display: block;
+}
+#contact .map .box_wrapp{
+	position: absolute;
+	margin: 0;
+	box-shadow: 0 0 7px 0 rgba(26, 26, 26, 0.4);
+	padding: 33px 0 33px;
+	background: white;
+	top: 41%;
+	border-radius: 4px;
+}
+#contact .map .box_wrapp .box_cont{
+	margin: 0 auto;
+	width: 76%;
+}
+#contact .map .box_wrapp .head{
+	width: 100%;
+	margin-bottom: 17px;
+	overflow: hidden;
+}
+#contact .map .box_wrapp .head h6{
+	font-size: 24px;
+	margin: 0;
+	font-style: italic;
+	float: left;
+	padding-bottom: 2px;
+	border-bottom: 1px solid;
+	font-weight: normal;
+}
+#contact .map .box_wrapp ul.street{
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+#contact .map .box_wrapp ul.street li{
+	color: #777777;
+	font-size: 14px;
+}
+#contact .map .box_wrapp ul.street li.icon{
+	margin-top: 3px;
+}
+#contact .map .box_wrapp ul.street li.icon span.ico1{
+	float: left;
+	height: 20px;
+}
+#contact .map .box_wrapp ul.street li.icon span.ico2{
+	float: left;
+	height: 20px;
+	background-position: 0px -23px;
+}
+#contact .map .box_wrapp ul.street li.icon .text{
+	font-size: 15px;
+	color: #777777;
+	margin-left: 6px;
+}
+#contact .map .box_wrapp ul.street li.icon a:hover{
+	color: #187CCC;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+}
+#contact .map .box_wrapp ul.street li.icontop{
+	margin-top: 13px;
+}
+#contact .map .box_wrapp .headbottom{
+	margin-top: 42px;
+}
+#contact .map .box_wrapp p{
+	color: #777777;
+	font-size: 14px;
+	margin-bottom: 32px;
+}
+#contact .map .box_wrapp a.btn{
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 15px;
+	background: #187CCC;
+	text-shadow: none;
+	padding: 6px 0 6px;
+	font-weight: bold;
+	border: 0 none;
+	box-shadow: none;
+	border-radius: 3px;
+	margin: 0 auto;
+	display: block;
+	width: 56%;
+	-webkit-transition: background linear .2s, box-shadow linear .2s;
+	-moz-transition: background linear .2s, box-shadow linear .2s;
+	-o-transition: background linear .2s, box-shadow linear .2s;
+	transition: background linear .2s, box-shadow linear .2s;
+}
+#contact .map .box_wrapp a.btn:hover{
+	background: #252528;
+}
+.contacticos{
+	background: url('../img/contact_icos.png') no-repeat;
+	width: 24px;
+	height: 44px;
+}
+
+/* Responsive
+-------------------------------------------------- */
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}
+@media (min-width: 980px) {
+	
+}
+@media (max-width: 979px) {
+
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {	
+	#contact .contact .submit .box{
+		margin: 10px 0 24px;
+	}
+	#contact .form .box input[type="text"]{
+		width: 87%;
+	}
+	#contact .contact .submit .right input[type="submit"]{
+		margin: 0 auto;
+		float: none;
+		width: 53%;
+		display: block;
+		padding: 7px;
+	}
+	#contact .map .box_wrapp{
+		width: 90%;
+		position: relative;
+		margin: 0 auto 80px;	
+	}
+	#contact .map .box_wrapp .box_cont{
+	}
+	#contact .map iframe{
+		display: none;
+	}
+	#contact .map .box_wrapp a.btn{
+		width: 65%;
+	}
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	#contact .contact .submit .right input[type="submit"]{
+		width: 60%;		
+	}
+	#contact .map .box_wrapp{
+		width: 100%;	
+	}
+}

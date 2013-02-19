@@ -1,0 +1,240 @@
+#blog{
+	margin-top: 70px;
+}
+#blog .header{
+	margin-left: 0;
+	margin-bottom: 56px;
+	margin-top: 30px;
+}
+#blog .section_header input[type="text"]{
+	float: right;
+	margin-top: 9px;
+	background: url('../img/search.png') #fff no-repeat 5px;
+	padding-left: 28px;
+	width: 18%;
+	border-radius: 5px;
+}
+#blog .post_row{
+	margin-left: 0;
+	margin-bottom: 40px;
+	height: 495px;
+}
+#blog .lastpost_row{
+	margin-bottom: 0;
+}
+#blog .post_row .post{
+	background: #fff;
+	margin-left: 0;
+	margin-right: 20px;
+	border-radius: 4px;
+	box-shadow: 1px 1px 2px 0px #E0E0E0;
+}
+#blog .post_row .last{
+	margin-right: 0;
+}
+#blog .post_row .post .img{
+	position: relative;
+}
+#blog .post_row .post .img .date{
+	background: #E8554E;
+	position: absolute;
+	padding: 2px 5px;
+	top: 0;
+	left: 11px;
+}
+#blog .post_row .post .img .date p{
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: italic;
+	margin:0;
+}
+#blog .post_row .post .img img {
+	min-height: 186px;
+}
+#blog .post_row .post .text{
+	margin: 18px auto 0;
+    width: 83%;
+}
+#blog .post_row .post .text h5 {
+	margin: 0 0 8px 0;
+	font-size: 20px;
+	line-height: 23px;
+}
+#blog .post_row .post .text h5 a {
+	color: #333;
+}
+#blog .post_row .post .text span.date{
+	color: #9F9F9F;
+	display: block;
+	margin-bottom: 12px;
+	font-style:italic;
+	font-size: 13px;
+}
+#blog .post_row .post .text p{
+	margin: 0;
+	line-height: 21px;
+	font-size: 14px;
+}
+#blog .post_row .post .author_box{
+	margin: 12px auto 20px;
+	border-top: 1px solid #EDEDED;
+	overflow: hidden;
+	text-align: left;
+	width: 85%;
+	padding-top: 12px;
+}
+#blog .post_row .post .author_box  h6{
+	margin: 0 0 3px 0;	
+	font-size: 13px;
+	line-height: 15px;
+	font-style: italic;
+	font-weight: normal;
+	color: #B2B2B2;
+}
+#blog .post_row .post .author_box p{
+	color: #B2B2B2;
+	font-style: italic;
+	font-size: 13px;
+	line-height: 14px;
+	margin: 0;
+}
+#blog .post_row .post .author_box img{
+	float: right;
+}
+#blog .post_row .post a.plus_wrapper{
+	width: 99%;
+	text-align: center;
+	background: #fff;
+	display: none;
+	border-radius: 0px 0px 4px 4px;
+	padding: 6px 0px 2px;
+	margin: 0 auto 1px;
+}
+#blog .post_row .post a.plus_wrapper span{
+	color: #1189D9;
+	font-size: 30px;
+	font-weight: bold;
+}
+/*#blog .post_row .post a.plus_wrapper,
+#blog .post_row .post a.plus_wrapper span{
+	-webkit-transition: all .1s linear;
+	-moz-transition: all .1s linear;
+	-ms-transition: all .1s linear;
+	-o-transition: all .1s linear;
+	transition: all .1s linear;	
+}*/
+#blog .post_row .post:hover a.plus_wrapper{
+	display: block;
+}
+/*#blog .post_row .post a.plus_wrapper:hover{
+	background: #1189D9;
+}
+#blog .post_row .post a.plus_wrapper:hover span{
+	color: #fff;
+}*/
+#blog .post_row .post:hover{
+	box-shadow: 0px 1px 5px 1px rgb(216, 216, 216);
+}
+#blog .post_row .post:hover .text h5 a{
+	color: #1189D9;
+}
+/*pagination*/
+#blog .pagination {
+	margin: 35px auto 0;
+	width: 26%;
+}
+
+/* Responsive
+-------------------------------------------------- */
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}
+@media (min-width: 980px) {
+
+}
+@media (max-width: 979px) {
+	
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	#blog .pagination{
+		width: 36%;
+	}
+	#blog .post_row{
+		height: 545px;
+	}
+
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {	
+	#blog .post_row{
+		height: auto;
+		margin-bottom: 0;
+	}
+	#blog .post_row .post{
+		width: 65%;
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+	#blog .post_row .post .img {
+		float: left;
+		margin-bottom: 16px;
+	}
+	#blog .post_row .post .author_box{
+		display: none;
+	}
+	#blog .post_row .post .text {
+		overflow: hidden;
+		width: 81%;
+		margin: 0 auto 20px;
+		margin-top: 7px;
+	}
+	#blog .post_row .post a.plus_wrapper{
+		display: inline-block;
+		margin: 0;
+		width: 100%;
+	}
+	/*#blog .post_row .post:hover a.plus_wrapper{
+		display: inline-block;
+		background: #1189D9;
+	}
+	#blog .post_row .post:hover a.plus_wrapper span{
+		color: #fff;
+	}*/
+	#blog .pagination {
+		width: 55%;
+	}
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	#blog .post_row{
+		height: auto;
+		margin-bottom: 0px;
+	}
+	#blog .post_row .post{
+		margin: 0 auto 50px;
+		width: 72%;
+	}
+	#blog .post_row .post .img {
+		float: none;
+		margin: 0;
+	}
+	#blog .post_row .post .text {
+		float: none;
+		margin: 24px auto 0;
+		width: 86%;
+	}
+	#blog .post_row .post .author_box {
+		margin: 30px auto 15px;
+	}
+	#blog .post_row .post a.plus_wrapper{
+		display: block;
+		padding: 10px 0 8px;
+	}
+	#blog .pagination {
+		width: 72%;
+	}
+}

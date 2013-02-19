@@ -1,0 +1,293 @@
+#blog_post{
+	margin-top: 70px;
+}
+#blog_post .section_header input[type="text"]{
+	float: right;
+	margin-top: 9px;
+	background: url('../img/search.png') #fff no-repeat 5px;
+	padding-left: 28px;
+	width: 18%;
+	border-radius: 5px;
+}
+#blog_post .post_pic {
+	border: 7px solid #fff;
+	border-radius: 5px;
+	box-shadow:1px 1px 2px 0px rgb(207, 207, 207);
+}
+#blog_post .post_content {
+	margin-top: 40px;
+	padding-bottom: 90px;
+	border-bottom: 1px solid rgb(202, 202, 202);
+	box-shadow: 0px 1px 0px 0px white;
+}
+#blog_post .post_content h2 {
+	font-size: 32px;
+	color: #3F3F3F;
+	margin-bottom: 15px;
+}
+#blog_post .post_content span.date{
+	width: 100%;
+	font-size: 14px;
+	font-style: italic;
+	margin-bottom: 42px;
+	display: block;
+	color: #9C9C9C;
+}
+#blog_post .post_content p {
+	line-height: 24px;
+	margin-bottom: 15px;
+}
+#blog_post .post_content .author_box {
+	margin-top: 50px;
+}
+#blog_post .post_content .author_box .author {
+	margin-top: 45px;
+	font-weight: bold;
+	font-size: 15px;
+	color: #1189D9;
+}
+#blog_post .post_content .author_box .area {
+	font-size: 15px;
+	font-style: italic;
+	margin-top: 5px;
+	color: #9C9C9C;
+}
+#blog_post .comments {
+	margin-top: 3px;
+	padding-top: 50px;
+	border-bottom: 1px solid rgb(202, 202, 202);
+	box-shadow: 0px 1px 0px 0px white;
+	padding-bottom: 3px;
+}
+#blog_post .comments h4{
+	font-size: 23px;
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+#blog_post .comments .comment {
+	margin-bottom: 60px;
+	margin-top: 30px;
+}
+#blog_post .comments .comment.reply_to {
+	margin-top: -10px;
+}
+#blog_post .comments .comment .author_pic {
+	max-width: 55px;
+	float: right;
+}
+#blog_post .comments .comment .name {
+	font-weight: bold;
+	color: #3F3F3F;
+	font-size: 14px;
+}
+#blog_post .comments .comment a.reply {
+	color: #1189D9;
+	text-decoration: underline;
+	margin-left: 20px;
+	font-size: 14px;
+	-webkit-transition: color .2s;
+	-moz-transition: color .2s;
+	-ms-transition: color .2s;
+	transition: color .2s;
+}
+#blog_post .comments .comment a.reply:hover{
+	color: #252528;
+}
+#blog_post .comments .comment .date {
+	font-size: 13px;
+	font-weight: bold;
+	color: #747B85;
+}
+#blog_post .comments .comment .response {
+	margin-top: 10px;
+	line-height: 22px;
+	font-size: 14px;
+}
+
+/* new comment */
+#blog_post .new_comment {
+	padding-top: 30px;
+	margin-top: 3px;
+}
+#blog_post .new_comment h4{
+	font-size: 23px;
+	color: #3F3F3F;
+}
+#blog_post .new_comment form {
+	margin-top: 35px;
+}
+#blog_post .new_comment form input[type="text"] {
+	height: 25px;
+	border-radius: 3px;
+	width: 95.7%;
+}
+#blog_post .new_comment form textarea {
+	margin-top: 10px;
+	width: 97.9%;
+}
+#blog_post .new_comment form a.send{
+	float: right;
+	color: #fff;
+	border: 0 none;
+	background: #187CCC;
+	text-shadow: none;
+	padding: 4px 15px 4px;
+	box-shadow: none;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 8px;
+	-webkit-transition: background linear .2s, box-shadow linear .2s;
+	-moz-transition: background linear .2s, box-shadow linear .2s;
+	-o-transition: background linear .2s, box-shadow linear .2s;
+	transition: background linear .2s, box-shadow linear .2s;
+}
+#blog_post .new_comment form a.send:hover{
+	background: #252528;
+}
+#blog_post .sidebar{
+	margin: 0;
+	padding: 40px 19px 40px 28px;
+	background: #fff;
+	border-radius: 4px;
+	box-shadow:1px 1px 2px 0px rgb(207, 207, 207);
+	float: right;
+}
+#blog_post .sidebar .box{
+	padding-bottom: 30px;
+	overflow: hidden;
+	margin-bottom: 40px;
+	border-bottom: 1px solid rgb(216, 216, 216);
+}
+#blog_post .sidebar .last{
+	border: 0 none;
+	padding: 0;
+	margin-bottom: 0;
+}
+#blog_post .sidebar .box .recent{
+	width: 100%;
+	margin-bottom: 20px;
+	float: left;
+}
+#blog_post .sidebar .box .recent span img{
+	float: left;
+	margin-right: 10px;
+}
+#blog_post .sidebar .box .recent p{
+	margin: 0;
+	line-height: 18px;
+	font-size: 14px;
+}
+#blog_post .sidebar .sidebar_header {
+	margin-bottom: 20px;
+}
+#blog_post .sidebar .sidebar_header h4{
+	font-size: 19px;
+	margin: 0;
+}
+#blog_post .sidebar .sidebar_menu {
+	list-style-type: none;
+	margin-left: 0px;
+}
+#blog_post .sidebar .sidebar_menu ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#blog_post .sidebar .sidebar_menu li {
+	margin-bottom: 6px;
+}
+#blog_post .sidebar .sidebar_menu li a {
+	color: #333;
+	font-size: 14px;
+	-webkit-transition: color .2s;
+	-moz-transition: color .2s;
+	-ms-transition: color .2s;
+	transition: color .2s;
+}
+#blog_post .sidebar .sidebar_menu li a:hover {
+	color: #1187D8;
+}
+#blog_post .sidebar .recent_posts {
+	list-style-type: none;
+	margin-top: 30px;
+	margin-left: 0px;
+}
+#blog_post .sidebar .recent_posts li {
+	margin-bottom: 20px;
+	font-size: 15px;
+}
+#blog_post .sidebar .recent_posts .thumb {
+	border: 3px solid #fff;
+	box-shadow: 0px 0px 1px 1px #bdbdbd;
+}
+#blog_post .sidebar .recent_posts a.link {
+	color: #333;
+	display: block;
+	margin-top: 10px;
+}
+#blog_post .sidebar .recent_posts a:hover {
+	color: #87a46e;
+	text-decoration: underline;
+}
+#blog_post .sidebar ul.recent_photos{
+	list-style-type: none;
+	margin-left: 0px;
+	padding-top: 18px;
+}
+#blog_post .sidebar ul.recent_photos li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 6px;
+	margin-bottom: 11px;
+}
+#blog_post .sidebar ul.recent_photos li a img {
+	max-width: 55px;
+	margin-right: 9px;
+	border-radius: 3px;
+}
+
+/* Responsive
+-------------------------------------------------- */
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	#blog_wrapper .header hr {
+		width: 70%;
+	}
+	#blog_wrapper .post .main_pic {
+		display: block;
+		margin: 0 auto;
+	}
+	#blog_wrapper .sidebar .recent_posts .thumb {
+		max-width: 100px;
+	}
+}
+
+@media (min-width: 768px) {
+	#blog_wrapper .sidebar .search-query {
+		width: 85%;
+	}
+	#blog_post .sidebar .box .recent p{
+		font-size: 13px;
+	}
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+}
+@media (max-width: 979px) {
+	
+}
+@media (min-width: 980px) {
+	
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+	#blog_wrapper .post .info {
+		width: 420px;
+	}
+}

@@ -1,0 +1,232 @@
+#features .subtitle h2{
+	margin: 0;
+	font-style: italic;
+	font-size: 24px;
+	font-weight: normal;
+	margin-bottom: 70px;
+	line-height: 35px;
+	text-align: center;
+}
+/* features */
+#features {
+	margin-top: 70px;
+}
+#features .section_header h3 span{
+	font-size: 18px;
+	line-height: 20px;
+}
+#features .option1{
+	margin-bottom: 70px;
+}
+#features .option1 .feature {
+	border-bottom: 1px solid #e0e0e0;
+	margin-bottom: 65px;
+}
+#features .option1 .feature .info h3 {
+	font-size: 21px;
+	margin-top: 35px;
+}
+#features .option1 .feature.ss h3 {
+	margin-top: 45px;
+}
+#features .option1 .feature .info h3 img {
+	margin-right: 18px;
+	position: relative;
+	top: -10px;
+}
+#features .option1 .feature .info p {
+	margin-top: 15px;
+}
+#features .option2{
+	margin-bottom: 70px;
+}
+#features .option2 .feature {
+	margin-bottom: 70px;
+}
+#features .option2 .feature .box{
+	text-align: center;
+	float: left;
+	width: 16%;
+	height: 77px;
+}
+#features .option2 .feature .box img.one{
+	margin-top: 18px;
+}
+#features .option2 .feature .box img.two{
+	margin-top: 20px;
+}
+#features .option2 .feature .text{
+	float: left;
+	width: 76%;
+	margin-top: 17px;
+	margin-left: 23px;
+}
+#features .option2 .feature .text h6{
+	margin: 0 0 8px 0;
+	font-size: 20px;
+}
+#features .option2 .feature .text p{
+	margin: 0;
+	font-size: 14px;
+	line-height: 23px;
+}
+#features .option2 .right{
+	float: right;
+}
+#features .option3 .feature{
+	padding-bottom: 38px;
+	background: white;
+	box-shadow: 1px 1px 2px 0px #E0E0E0;
+	border-radius: 4px;
+	cursor: pointer;
+	/*border:1px solid #fff;*/
+}
+#features .option3 .feature .img{
+	text-align: center;
+	margin: 42px auto 37px;
+}
+#features .option3 .feature .text{
+	margin: 0 auto;
+	width: 87%;
+}
+#features .option3 .feature .text h6{
+	margin: 0 0 9px 0;
+	font-size: 20px;
+	text-align: center;
+}
+#features .option3 .feature .text p{
+	margin: 0 auto;
+	font-size: 14px;
+	line-height: 23px;
+	text-align: center;
+	width: 90%;
+	margin-top: 18px;
+}
+#features .option3 .feature:hover{
+	border-color: #B1B1B1;
+	box-shadow: 0px 0px 6px -1px #B4B4B4;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;	
+}
+#features .option1 .last{
+	margin-bottom: 0;
+}
+
+/* Responsive
+-------------------------------------------------- */
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}
+@media (min-width: 980px) {
+	
+}
+@media (max-width: 979px) {
+	#features .features_op1_row .feature .img_box span.circle{
+		top: 35%;
+	}
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {	
+	#features .features_op1_row .feature {
+		margin-bottom: 60px;
+	}
+	#features .features_op1_row .last{
+		margin-bottom: 0;
+	}
+	#features .features_op1_row .feature .img_box{
+		text-align: center;
+	}
+	#features .features_op1_row .feature .text{
+
+	}
+	#features .features_op1_row .feature .text h6{
+		text-align: center;
+	}
+	#features .features_op1_row .feature .img_box span.circle{
+		top: 38%;
+		left: 48%;
+	}
+	#features .features_op1_row .feature:hover .img_box{
+		box-shadow:none;
+	}
+	#features .option2 {
+		margin-bottom: 60px;
+	}
+	#features .option2 .feature {
+		float: left;
+		width: 100%;
+		margin-bottom: 60px;
+	}
+	#features .option2 .right{
+		/*margin-bottom: 0;*/
+	}
+	#features .option2 .feature .text{
+		margin-top: 0;
+	}
+	#features .option3 .feature {
+		margin-bottom: 60px;
+		overflow: hidden;
+	}
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	#features .subtitle h2 {
+		font-size: 22px;
+		line-height: 30px;
+	}
+	#features .features_op1_row .feature {
+		margin-bottom: 60px;
+	}
+	#features .features_op1_row .last{
+		margin-bottom: 0;
+	}
+	#features .features_op1_row .feature .img_box{
+		text-align: center;
+	}
+	#features .features_op1_row .feature .text{
+
+	}
+	#features .features_op1_row .feature .text h6{
+		text-align: left;
+	}
+	#features .features_op1_row .feature .img_box span.circle{
+		left: 44%;
+	}
+	#features .features_op1_row .feature:hover .img_box{
+		box-shadow:none;
+	}
+	#features .option2 {
+		margin-bottom: 60px;
+	}
+	#features .option2 .feature {
+		float: left;
+		width: 100%;
+		margin-bottom: 60px;
+	}
+	#features .option2 .right{
+		/*margin-bottom: 0;*/
+	}
+	#features .option2 .feature .text{
+		margin-top: 0;
+	}
+	#features .last {
+		margin-bottom: 0;
+	}
+	#features .option3 .feature {
+		margin-bottom: 60px;
+	}
+}
+
+
+
+
+

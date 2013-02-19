@@ -1,0 +1,124 @@
+#portfolio {
+	margin-top: 60px;
+}
+#portfolio #filters {
+	list-style-type: none;
+	height: 30px;
+	margin-bottom: 40px;
+	text-align: center;
+	margin-top: -20px;
+}
+#portfolio #filters li {
+	display: inline-block;
+	font-size: 20px;
+	margin: 0px 6px;
+}
+#portfolio #filters li.separator {
+	color: #c0c0c0;
+	font-weight: lighter;
+}
+#portfolio #filters li a {
+	color: #3f3f3f;
+	font-style: italic;
+	-webkit-transition: color .2s;
+	-moz-transition: color .2s;
+	-ms-transition: color .2s;
+	transition: color .2s;
+}
+#portfolio #filters li a:hover,
+#portfolio #filters li a.active {
+	color: #1189d9;
+}
+#portfolio #gallery_container {
+	margin-bottom: 50px;
+}
+#portfolio #gallery_container .photo {
+	width: 285px;
+	margin: 5px;
+	float: left;
+	position: relative;
+}
+#portfolio #gallery_container .photo:hover .mask {
+	display: block;
+	opacity: 1;
+	filter: alpha(opacity = 100);
+}
+
+#portfolio #gallery_container .photo img { }
+
+#portfolio #gallery_container .photo .mask {
+	position: absolute;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+	box-shadow: 0px 1px 6px 2px #b1b1b1;
+	top: 0px;
+	left: 0px;
+	border-radius: 5px;
+	height: 100%;
+	padding: 0px 20px;
+	width: 245px;
+	background: rgba(17, 137, 217, 0.5);
+	-webkit-transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    transition: opacity .25s ease-in-out;
+}
+#portfolio #gallery_container .photo .mask h3 {
+	color: #fff;
+	font-size: 22px;
+	position: relative;
+	top: 39%;
+}
+#portfolio #gallery_container .photo .mask small {
+	color: rgb(240, 240, 240);
+	font-size: 15px;
+	font-style: italic;
+	position: relative;
+	top: 35%;
+	display: block;
+}
+#portfolio #gallery_container .photo .mask .more {
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	position: absolute;
+	bottom: 7%;
+	left: 47%;
+}
+
+/* Responsive
+-------------------------------------------------- */
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}
+@media (min-width: 980px) {
+
+}
+@media (max-width: 979px) {
+	
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+
+}	
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {	
+
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	#portfolio #filters li{
+		margin: 0px 4px;
+	}
+	#portfolio #filters li a{
+		font-size: 18px;
+	}	
+	#portfolio #gallery_container .photo{
+		margin-left: 35px;
+	}
+	#portfolio #gallery_container .photo img{
+		left: 10%;
+	}
+}
+
