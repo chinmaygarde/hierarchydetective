@@ -35,7 +35,6 @@
 		EA7729821699548B00CD63EE /* CALayer+HDHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = EA77297F1699548B00CD63EE /* CALayer+HDHelpers.m */; };
 		EA880EC115A406260094908B /* HDMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = EA880EBF15A406250094908B /* HDMessage.h */; };
 		EA880EC215A406260094908B /* HDMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = EA880EC015A406250094908B /* HDMessage.m */; };
-		EA89BD4216981A3F0053B290 /* libwax.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA89BD4116981A3F0053B290 /* libwax.a */; };
 		EAA0C6DD1692183500392FD1 /* HDArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA0C6DB1692183400392FD1 /* HDArgument.h */; };
 		EAA0C6DE1692183500392FD1 /* HDArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA0C6DC1692183500392FD1 /* HDArgument.m */; };
 		EAA0C6E4169218C100392FD1 /* HDScriptArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA0C6E2169218C100392FD1 /* HDScriptArgument.h */; };
@@ -55,6 +54,7 @@
 		EAA3B23A169A6DDA0070643D /* NSObject+HDHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B238169A6DDA0070643D /* NSObject+HDHelpers.m */; };
 		EAA3B23B169A6DDA0070643D /* NSObject+HDHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B238169A6DDA0070643D /* NSObject+HDHelpers.m */; };
 		EAA3B23C169A6DDA0070643D /* NSObject+HDHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B238169A6DDA0070643D /* NSObject+HDHelpers.m */; };
+		EAA56BA316D82DBE008E379F /* HDGCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = EA10CE5116AADEB0008735A5 /* HDGCDAsyncSocket.m */; };
 		EAAC3F591698FC310069113E /* HDProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = EAAC3F571698FC310069113E /* HDProperties.h */; };
 		EAAC3F5B1698FE5D0069113E /* UIView+HDHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA0C6F916921E9300392FD1 /* UIView+HDHelpers.m */; };
 		EAAF3B87167AFA950087C40A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAAF3B86167AFA950087C40A /* UIKit.framework */; };
@@ -154,7 +154,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAC363E816A3E87500AD1D28 /* QuartzCore.framework in Frameworks */,
-				EA89BD4216981A3F0053B290 /* libwax.a in Frameworks */,
 				EAAF3B8C167AFAC00087C40A /* CoreGraphics.framework in Frameworks */,
 				EAAF3B8A167AFAB50087C40A /* CFNetwork.framework in Frameworks */,
 				EAAF3B89167AFAB10087C40A /* Security.framework in Frameworks */,
@@ -536,6 +535,7 @@
 				EA77297D1699535B00CD63EE /* HDQuartzDetective.m in Sources */,
 				EA7729821699548B00CD63EE /* CALayer+HDHelpers.m in Sources */,
 				EAA3B23B169A6DDA0070643D /* NSObject+HDHelpers.m in Sources */,
+				EAA56BA316D82DBE008E379F /* HDGCDAsyncSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
