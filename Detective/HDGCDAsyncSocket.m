@@ -4244,7 +4244,7 @@ enum HDGCDAsyncSocketConfig
 		return;
 	}
 	
-	BOOL hasBytesAvailable;
+	BOOL hasBytesAvailable = NO;
 	unsigned long estimatedBytesAvailable;
 	
 	if ([self usingCFStreamForTLS])
