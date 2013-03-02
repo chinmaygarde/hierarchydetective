@@ -129,7 +129,7 @@ NSData* GenerateUniqueMessageBoundary() {
   
   [_delegate processCommand:(HDMessage *)message withCompletionHandler:^(NSError *error){
     if(error != nil) {
-      NSLog(@"Could not process command: %d", [message messageType]);
+      NSLog(@"Could not process command: %ld", [message messageType]);
       return;
     }
     

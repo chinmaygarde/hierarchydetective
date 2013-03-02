@@ -67,6 +67,41 @@
 		EAB9B92115A67A5100385537 /* NSMutableArray+Queue.h in Headers */ = {isa = PBXBuildFile; fileRef = EAB9B91F15A67A5100385537 /* NSMutableArray+Queue.h */; };
 		EAB9B92215A67A5100385537 /* NSMutableArray+Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB9B92015A67A5100385537 /* NSMutableArray+Queue.m */; };
 		EAB9B92315A67A5100385537 /* NSMutableArray+Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB9B92015A67A5100385537 /* NSMutableArray+Queue.m */; };
+		EAC0822416E1F59100072CD9 /* HDServer.m in Sources */ = {isa = PBXBuildFile; fileRef = EA54098215944C8D000F8C43 /* HDServer.m */; };
+		EAC0822516E1F59100072CD9 /* HDDetective.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD813C715959DD20087FD7E /* HDDetective.m */; };
+		EAC0822616E1F59100072CD9 /* HDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4F7985159ECFED00CDE940 /* HDUtils.m */; };
+		EAC0822716E1F59100072CD9 /* NSObject+HDSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4F7987159ECFED00CDE940 /* NSObject+HDSerialization.m */; };
+		EAC0822816E1F59100072CD9 /* HDMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = EA880EC015A406250094908B /* HDMessage.m */; };
+		EAC0822916E1F59100072CD9 /* NSMutableArray+Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB9B92015A67A5100385537 /* NSMutableArray+Queue.m */; };
+		EAC0822A16E1F59100072CD9 /* HDArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA0C6DC1692183500392FD1 /* HDArgument.m */; };
+		EAC0822B16E1F59100072CD9 /* HDScriptArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA0C6E3169218C100392FD1 /* HDScriptArgument.m */; };
+		EAC0822C16E1F59100072CD9 /* UIView+HDHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA0C6F916921E9300392FD1 /* UIView+HDHelpers.m */; };
+		EAC0822D16E1F59100072CD9 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA0C6FE1692265700392FD1 /* NSData+Base64.m */; };
+		EAC0822E16E1F59100072CD9 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA0C7001692265700392FD1 /* NSString+Base64.m */; };
+		EAC0822F16E1F59100072CD9 /* HDUIKitDetective.m in Sources */ = {isa = PBXBuildFile; fileRef = EA77297416994E6300CD63EE /* HDUIKitDetective.m */; };
+		EAC0823016E1F59100072CD9 /* HDQuartzDetective.m in Sources */ = {isa = PBXBuildFile; fileRef = EA77297A1699535B00CD63EE /* HDQuartzDetective.m */; };
+		EAC0823216E1F59100072CD9 /* NSObject+HDHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B238169A6DDA0070643D /* NSObject+HDHelpers.m */; };
+		EAC0823316E1F59100072CD9 /* HDGCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = EA10CE5116AADEB0008735A5 /* HDGCDAsyncSocket.m */; };
+		EAC0823616E1F59100072CD9 /* HDServer.h in Headers */ = {isa = PBXBuildFile; fileRef = EA54098115944C8D000F8C43 /* HDServer.h */; settings = {ATTRIBUTES = (); }; };
+		EAC0823716E1F59100072CD9 /* HDDetective.h in Headers */ = {isa = PBXBuildFile; fileRef = EAD813C615959DD20087FD7E /* HDDetective.h */; settings = {ATTRIBUTES = (); }; };
+		EAC0823816E1F59100072CD9 /* HDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = EA4F7984159ECFED00CDE940 /* HDUtils.h */; };
+		EAC0823916E1F59100072CD9 /* NSObject+HDSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = EA4F7986159ECFED00CDE940 /* NSObject+HDSerialization.h */; };
+		EAC0823A16E1F59100072CD9 /* HDMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = EA880EBF15A406250094908B /* HDMessage.h */; };
+		EAC0823B16E1F59100072CD9 /* NSMutableArray+Queue.h in Headers */ = {isa = PBXBuildFile; fileRef = EAB9B91F15A67A5100385537 /* NSMutableArray+Queue.h */; };
+		EAC0823C16E1F59100072CD9 /* HDArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA0C6DB1692183400392FD1 /* HDArgument.h */; };
+		EAC0823D16E1F59100072CD9 /* HDScriptArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA0C6E2169218C100392FD1 /* HDScriptArgument.h */; };
+		EAC0823E16E1F59100072CD9 /* UIView+HDHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA0C6F816921E9200392FD1 /* UIView+HDHelpers.h */; };
+		EAC0823F16E1F59100072CD9 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA0C6FD1692265700392FD1 /* NSData+Base64.h */; };
+		EAC0824016E1F59100072CD9 /* NSString+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA0C6FF1692265700392FD1 /* NSString+Base64.h */; };
+		EAC0824116E1F59100072CD9 /* HDScriptRunner.h in Headers */ = {isa = PBXBuildFile; fileRef = EAB12F6616939F3F0094B3A9 /* HDScriptRunner.h */; };
+		EAC0824216E1F59100072CD9 /* HDProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = EAAC3F571698FC310069113E /* HDProperties.h */; };
+		EAC0824316E1F59100072CD9 /* HDUIKitDetective.h in Headers */ = {isa = PBXBuildFile; fileRef = EA77297316994E6300CD63EE /* HDUIKitDetective.h */; };
+		EAC0824416E1F59100072CD9 /* HDQuartzDetective.h in Headers */ = {isa = PBXBuildFile; fileRef = EA7729791699535B00CD63EE /* HDQuartzDetective.h */; };
+		EAC0824516E1F59100072CD9 /* CALayer+HDHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = EA77297E1699548B00CD63EE /* CALayer+HDHelpers.h */; };
+		EAC0824616E1F59100072CD9 /* HDCocos2DDetective.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA3B1F8169A49040070643D /* HDCocos2DDetective.h */; };
+		EAC0824716E1F59100072CD9 /* CCNode+HDHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA3B1FC169A4B6B0070643D /* CCNode+HDHelpers.h */; };
+		EAC0824816E1F59100072CD9 /* NSObject+HDHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA3B237169A6DDA0070643D /* NSObject+HDHelpers.h */; };
+		EAC0824916E1F59100072CD9 /* HDGCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = EA10CE5016AADEB0008735A5 /* HDGCDAsyncSocket.h */; };
 		EAC363E816A3E87500AD1D28 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC363E716A3E87500AD1D28 /* QuartzCore.framework */; };
 		EAD7E82315AE80160084E86A /* HDMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = EA880EC015A406250094908B /* HDMessage.m */; };
 		EAD813C815959DD20087FD7E /* HDDetective.h in Headers */ = {isa = PBXBuildFile; fileRef = EAD813C615959DD20087FD7E /* HDDetective.h */; settings = {ATTRIBUTES = (); }; };
@@ -143,6 +178,7 @@
 		EAB12F6716939F3F0094B3A9 /* HDScriptRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDScriptRunner.m; sourceTree = "<group>"; };
 		EAB9B91F15A67A5100385537 /* NSMutableArray+Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Queue.h"; sourceTree = "<group>"; };
 		EAB9B92015A67A5100385537 /* NSMutableArray+Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Queue.m"; sourceTree = "<group>"; };
+		EAC0824D16E1F59100072CD9 /* libDetective CocoKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libDetective CocoKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC363E716A3E87500AD1D28 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EAD813C615959DD20087FD7E /* HDDetective.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDDetective.h; sourceTree = "<group>"; };
 		EAD813C715959DD20087FD7E /* HDDetective.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDDetective.m; sourceTree = "<group>"; };
@@ -175,6 +211,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAA3B218169A51EB0070643D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC0823416E1F59100072CD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +262,7 @@
 				EA54096D15944C27000F8C43 /* libDetective.a */,
 				EA4F799E159EE51900CDE940 /* DetectiveTest.octest */,
 				EAA3B217169A51EB0070643D /* libDetectiveCocos2D.a */,
+				EAC0824D16E1F59100072CD9 /* libDetective CocoKit.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -405,6 +449,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EAC0823516E1F59100072CD9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC0823616E1F59100072CD9 /* HDServer.h in Headers */,
+				EAC0823716E1F59100072CD9 /* HDDetective.h in Headers */,
+				EAC0823816E1F59100072CD9 /* HDUtils.h in Headers */,
+				EAC0823916E1F59100072CD9 /* NSObject+HDSerialization.h in Headers */,
+				EAC0823A16E1F59100072CD9 /* HDMessage.h in Headers */,
+				EAC0823B16E1F59100072CD9 /* NSMutableArray+Queue.h in Headers */,
+				EAC0823C16E1F59100072CD9 /* HDArgument.h in Headers */,
+				EAC0823D16E1F59100072CD9 /* HDScriptArgument.h in Headers */,
+				EAC0823E16E1F59100072CD9 /* UIView+HDHelpers.h in Headers */,
+				EAC0823F16E1F59100072CD9 /* NSData+Base64.h in Headers */,
+				EAC0824016E1F59100072CD9 /* NSString+Base64.h in Headers */,
+				EAC0824116E1F59100072CD9 /* HDScriptRunner.h in Headers */,
+				EAC0824216E1F59100072CD9 /* HDProperties.h in Headers */,
+				EAC0824316E1F59100072CD9 /* HDUIKitDetective.h in Headers */,
+				EAC0824416E1F59100072CD9 /* HDQuartzDetective.h in Headers */,
+				EAC0824516E1F59100072CD9 /* CALayer+HDHelpers.h in Headers */,
+				EAC0824616E1F59100072CD9 /* HDCocos2DDetective.h in Headers */,
+				EAC0824716E1F59100072CD9 /* CCNode+HDHelpers.h in Headers */,
+				EAC0824816E1F59100072CD9 /* NSObject+HDHelpers.h in Headers */,
+				EAC0824916E1F59100072CD9 /* HDGCDAsyncSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -460,6 +531,23 @@
 			productReference = EAA3B217169A51EB0070643D /* libDetectiveCocos2D.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		EAC0822216E1F59100072CD9 /* DetectiveCocoKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC0824A16E1F59100072CD9 /* Build configuration list for PBXNativeTarget "DetectiveCocoKit" */;
+			buildPhases = (
+				EAC0822316E1F59100072CD9 /* Sources */,
+				EAC0823416E1F59100072CD9 /* Frameworks */,
+				EAC0823516E1F59100072CD9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DetectiveCocoKit;
+			productName = Detective;
+			productReference = EAC0824D16E1F59100072CD9 /* libDetective CocoKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -484,6 +572,7 @@
 				EA54096C15944C27000F8C43 /* Detective */,
 				EA4F799D159EE51900CDE940 /* DetectiveTest */,
 				EAA3B216169A51EB0070643D /* DetectiveCocos2D */,
+				EAC0822216E1F59100072CD9 /* DetectiveCocoKit */,
 			);
 		};
 /* End PBXProject section */
@@ -569,6 +658,28 @@
 				EAA3B223169A52B80070643D /* HDCocos2DDetective.m in Sources */,
 				EAA3B224169A52BE0070643D /* CCNode+HDHelpers.m in Sources */,
 				EAA3B23C169A6DDA0070643D /* NSObject+HDHelpers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC0822316E1F59100072CD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC0822416E1F59100072CD9 /* HDServer.m in Sources */,
+				EAC0822516E1F59100072CD9 /* HDDetective.m in Sources */,
+				EAC0822616E1F59100072CD9 /* HDUtils.m in Sources */,
+				EAC0822716E1F59100072CD9 /* NSObject+HDSerialization.m in Sources */,
+				EAC0822816E1F59100072CD9 /* HDMessage.m in Sources */,
+				EAC0822916E1F59100072CD9 /* NSMutableArray+Queue.m in Sources */,
+				EAC0822A16E1F59100072CD9 /* HDArgument.m in Sources */,
+				EAC0822B16E1F59100072CD9 /* HDScriptArgument.m in Sources */,
+				EAC0822C16E1F59100072CD9 /* UIView+HDHelpers.m in Sources */,
+				EAC0822D16E1F59100072CD9 /* NSData+Base64.m in Sources */,
+				EAC0822E16E1F59100072CD9 /* NSString+Base64.m in Sources */,
+				EAC0822F16E1F59100072CD9 /* HDUIKitDetective.m in Sources */,
+				EAC0823016E1F59100072CD9 /* HDQuartzDetective.m in Sources */,
+				EAC0823216E1F59100072CD9 /* NSObject+HDHelpers.m in Sources */,
+				EAC0823316E1F59100072CD9 /* HDGCDAsyncSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -749,6 +860,48 @@
 			};
 			name = Release;
 		};
+		EAC0824B16E1F59100072CD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/Detective.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Detective/Detective-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = COCOKIT;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../Cocos2D/cocos2d",
+					"$(SRCROOT)/../Cocos2D/external/kazmath/include",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "Detective CocoKit";
+				SDKROOT = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EAC0824C16E1F59100072CD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/Detective.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Detective/Detective-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = COCOKIT;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../Cocos2D/cocos2d",
+					"$(SRCROOT)/../Cocos2D/external/kazmath/include",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "Detective CocoKit";
+				SDKROOT = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -784,6 +937,15 @@
 			buildConfigurations = (
 				EAA3B221169A51EB0070643D /* Debug */,
 				EAA3B222169A51EB0070643D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAC0824A16E1F59100072CD9 /* Build configuration list for PBXNativeTarget "DetectiveCocoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC0824B16E1F59100072CD9 /* Debug */,
+				EAC0824C16E1F59100072CD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
