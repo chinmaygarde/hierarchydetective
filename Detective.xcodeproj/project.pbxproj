@@ -24,6 +24,7 @@
 		EA4F79B5159EEBE700CDE940 /* NSObject+HDSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4F7987159ECFED00CDE940 /* NSObject+HDSerialization.m */; };
 		EA54098315944C8D000F8C43 /* HDServer.h in Headers */ = {isa = PBXBuildFile; fileRef = EA54098115944C8D000F8C43 /* HDServer.h */; settings = {ATTRIBUTES = (); }; };
 		EA54098415944C8D000F8C43 /* HDServer.m in Sources */ = {isa = PBXBuildFile; fileRef = EA54098215944C8D000F8C43 /* HDServer.m */; };
+		EA5BE05216E7D6B0004A0A0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5BE05116E7D6AF004A0A0A /* UIKit.framework */; };
 		EA77297516994E6300CD63EE /* HDUIKitDetective.h in Headers */ = {isa = PBXBuildFile; fileRef = EA77297316994E6300CD63EE /* HDUIKitDetective.h */; };
 		EA77297616994E6300CD63EE /* HDUIKitDetective.m in Sources */ = {isa = PBXBuildFile; fileRef = EA77297416994E6300CD63EE /* HDUIKitDetective.m */; };
 		EA77297716994E6300CD63EE /* HDUIKitDetective.m in Sources */ = {isa = PBXBuildFile; fileRef = EA77297416994E6300CD63EE /* HDUIKitDetective.m */; };
@@ -143,6 +144,7 @@
 		EA54097F15944C4C000F8C43 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		EA54098115944C8D000F8C43 /* HDServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDServer.h; sourceTree = "<group>"; };
 		EA54098215944C8D000F8C43 /* HDServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDServer.m; sourceTree = "<group>"; };
+		EA5BE05116E7D6AF004A0A0A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = file; name = UIKit.framework; path = ../../build/Release/UIKit.framework; sourceTree = "<group>"; };
 		EA77297316994E6300CD63EE /* HDUIKitDetective.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDUIKitDetective.h; sourceTree = "<group>"; };
 		EA77297416994E6300CD63EE /* HDUIKitDetective.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDUIKitDetective.m; sourceTree = "<group>"; };
 		EA7729791699535B00CD63EE /* HDQuartzDetective.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDQuartzDetective.h; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA5BE05216E7D6B0004A0A0A /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +252,7 @@
 		EA54096215944C27000F8C43 = {
 			isa = PBXGroup;
 			children = (
+				EA5BE05116E7D6AF004A0A0A /* UIKit.framework */,
 				EA54097215944C27000F8C43 /* Detective */,
 				EA4F79A4159EE51900CDE940 /* DetectiveTest */,
 				EA54096F15944C27000F8C43 /* Frameworks */,
