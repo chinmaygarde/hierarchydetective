@@ -56,6 +56,10 @@
 		EAA3B23B169A6DDA0070643D /* NSObject+HDHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B238169A6DDA0070643D /* NSObject+HDHelpers.m */; };
 		EAA3B23C169A6DDA0070643D /* NSObject+HDHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B238169A6DDA0070643D /* NSObject+HDHelpers.m */; };
 		EAA56BA316D82DBE008E379F /* HDGCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = EA10CE5116AADEB0008735A5 /* HDGCDAsyncSocket.m */; };
+		EAA9F5C717FB963000FB7875 /* HDViewControllerDetective.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA9F5C517FB963000FB7875 /* HDViewControllerDetective.h */; };
+		EAA9F5C817FB963000FB7875 /* HDViewControllerDetective.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA9F5C617FB963000FB7875 /* HDViewControllerDetective.m */; };
+		EAA9F5CB17FB975500FB7875 /* UIViewController+HDHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA9F5C917FB975500FB7875 /* UIViewController+HDHelpers.h */; };
+		EAA9F5CC17FB975500FB7875 /* UIViewController+HDHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA9F5CA17FB975500FB7875 /* UIViewController+HDHelpers.m */; };
 		EAAC3F591698FC310069113E /* HDProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = EAAC3F571698FC310069113E /* HDProperties.h */; };
 		EAAC3F5B1698FE5D0069113E /* UIView+HDHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA0C6F916921E9300392FD1 /* UIView+HDHelpers.m */; };
 		EAAF3B87167AFA950087C40A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAAF3B86167AFA950087C40A /* UIKit.framework */; };
@@ -172,6 +176,10 @@
 		EAA3B217169A51EB0070643D /* libDetectiveCocos2D.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDetectiveCocos2D.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA3B237169A6DDA0070643D /* NSObject+HDHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HDHelpers.h"; sourceTree = "<group>"; };
 		EAA3B238169A6DDA0070643D /* NSObject+HDHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HDHelpers.m"; sourceTree = "<group>"; };
+		EAA9F5C517FB963000FB7875 /* HDViewControllerDetective.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDViewControllerDetective.h; sourceTree = "<group>"; };
+		EAA9F5C617FB963000FB7875 /* HDViewControllerDetective.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDViewControllerDetective.m; sourceTree = "<group>"; };
+		EAA9F5C917FB975500FB7875 /* UIViewController+HDHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HDHelpers.h"; sourceTree = "<group>"; };
+		EAA9F5CA17FB975500FB7875 /* UIViewController+HDHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HDHelpers.m"; sourceTree = "<group>"; };
 		EAAC3F571698FC310069113E /* HDProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDProperties.h; sourceTree = "<group>"; };
 		EAAF3B86167AFA950087C40A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EAAF3B88167AFAB00087C40A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -336,6 +344,7 @@
 		EA77297116994E4200CD63EE /* Aspects */ = {
 			isa = PBXGroup;
 			children = (
+				EAA1EFDE17FB956400A559B1 /* ViewController */,
 				EAA3B1F6169A48940070643D /* Cocos2D */,
 				EA7729781699534400CD63EE /* Quartz */,
 				EAAC3F561698F9C80069113E /* UIKit */,
@@ -376,6 +385,17 @@
 				EAA0C7001692265700392FD1 /* NSString+Base64.m */,
 			);
 			path = Base64;
+			sourceTree = "<group>";
+		};
+		EAA1EFDE17FB956400A559B1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EAA9F5C517FB963000FB7875 /* HDViewControllerDetective.h */,
+				EAA9F5C617FB963000FB7875 /* HDViewControllerDetective.m */,
+				EAA9F5C917FB975500FB7875 /* UIViewController+HDHelpers.h */,
+				EAA9F5CA17FB975500FB7875 /* UIViewController+HDHelpers.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		EAA3B1F6169A48940070643D /* Cocos2D */ = {
@@ -450,6 +470,8 @@
 				EAA3B1FE169A4B6B0070643D /* CCNode+HDHelpers.h in Headers */,
 				EAA3B239169A6DDA0070643D /* NSObject+HDHelpers.h in Headers */,
 				EA10CE5216AADEB0008735A5 /* HDGCDAsyncSocket.h in Headers */,
+				EAA9F5C717FB963000FB7875 /* HDViewControllerDetective.h in Headers */,
+				EAA9F5CB17FB975500FB7875 /* UIViewController+HDHelpers.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,6 +674,8 @@
 				EA7729811699548B00CD63EE /* CALayer+HDHelpers.m in Sources */,
 				EAA3B23A169A6DDA0070643D /* NSObject+HDHelpers.m in Sources */,
 				EA10CE5316AADEB0008735A5 /* HDGCDAsyncSocket.m in Sources */,
+				EAA9F5C817FB963000FB7875 /* HDViewControllerDetective.m in Sources */,
+				EAA9F5CC17FB975500FB7875 /* UIViewController+HDHelpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
