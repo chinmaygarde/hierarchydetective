@@ -56,3 +56,45 @@
 }
 
 @end
+
+typedef void(^UIViewControllerOperationBlock)(UIView *);
+
+@implementation UIView (UIViewControllerAspectHelpers)
+
+-(UIViewController *) associatedViewController {
+    UIResponder *responder = self;
+    
+    while ((responder = [responder nextResponder])) {
+        if ([responder isKindOfClass: [UIViewController class]])
+            return (UIViewController *)responder;
+    }
+    
+    return nil;
+}
+
+-(void) performBlockForAllViewsInHierarchy:(UIViewControllerOperationBlock) block {
+    block(self);
+    for (UIView *view in self.subviews) {
+        [view performBlockForAllViewsInHierarchy:block];
+    }
+}
+
+-(NSArray *) viewControllerHierarchyRoots {
+    NSMutableSet *roots = [[NSMutableSet alloc] init];
+    
+    [self performBlockForAllViewsInHierarchy:^(UIView * view) {
+        UIViewController *controller = [view associatedViewController];
+        
+        while (controller.parentViewController != nil) {
+            controller = controller.parentViewController;
+        }
+        
+        if (controller!= nil) {
+            [roots addObject:controller];
+        }
+    }];
+    
+    return [roots allObjects];
+}
+
+@end

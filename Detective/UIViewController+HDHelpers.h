@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "HDProperties.h"
 
+@interface UIView (UIViewControllerAspectHelpers)
+
+-(NSArray *) viewControllerHierarchyRoots;
+
+@end
+
 @interface UIViewController (HDHelpers)
 
 @end

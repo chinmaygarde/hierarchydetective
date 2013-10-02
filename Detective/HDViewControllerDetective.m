@@ -8,6 +8,7 @@
 
 #import "HDViewControllerDetective.h"
 #import "HDUtils.h"
+#import "UIViewController+HDHelpers.h"
 
 @implementation HDViewControllerDetective
 
@@ -32,10 +33,7 @@
         {
             NSMutableArray *rootControllers = [[NSMutableArray alloc] init];
             for (UIWindow *window in [UIApplication sharedApplication].windows) {
-                UIViewController *controller = window.rootViewController;
-                if (controller) {
-                    [rootControllers addObject:controller];
-                }
+                [rootControllers addObjectsFromArray:[window viewControllerHierarchyRoots]];
             }
             message.responseData = rootControllers;
             completionHandler(nil);
