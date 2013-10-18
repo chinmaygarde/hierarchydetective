@@ -1,6 +1,18 @@
 Hierarchy Detective
-------------------
-Repository for the iOS static library that needs to be linked into the application
+===================
+
+<iframe src="http://player.vimeo.com/video/59963955?title=0&byline=0&portrait=0&color=ffffff" width="auto" height="auto" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+Learn More
+----------
+1. Visit [Hierarchy Detective](http://hierarchydetective.com/) for an overview of how to use the application and library in your own projects
+2. Download the latest [release](https://github.com/chinmaygarde/hierarchydetective/releases)
+3. Once you have the Mac application, explore a [few](http://hierarchydetective.com/examples/Catalog.hdet) [sample](http://hierarchydetective.com/examples/Emoji.hdet) [traces](http://hierarchydetective.com/examples/Segments.hdet) yourself.
+3. This repository contains the source for the library that needs to be linked into the application. The code for the client application will be released very soon.
+
+![Quartz Core](http://hierarchydetective.com/product/S1.png)
+![Nav Bar](http://hierarchydetective.com/product/S3.png)
+![Emoji](http://hierarchydetective.com/product/S4.png)
 
 Getting Started
 -----------
