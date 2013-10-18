@@ -1,10 +1,6 @@
 Hierarchy Detective
 ===================
 
-<iframe src="http://player.vimeo.com/video/59963955?title=0&byline=0&portrait=0&color=ffffff" width="auto" height="auto" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-
-Learn More
-----------
 1. Visit [Hierarchy Detective](http://hierarchydetective.com/) for an overview of how to use the application and library in your own projects
 2. Download the latest [release](https://github.com/chinmaygarde/hierarchydetective/releases)
 3. Once you have the Mac application, explore a [few](http://hierarchydetective.com/examples/Catalog.hdet) [sample](http://hierarchydetective.com/examples/Emoji.hdet) [traces](http://hierarchydetective.com/examples/Segments.hdet) yourself.
