@@ -49,4 +49,6 @@ Pod::Spec.new do |s|
 
   s.compiler_flags = ['-DBUILDING_LIBRARY']
 
+  s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
+
 end
