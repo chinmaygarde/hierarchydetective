@@ -8,7 +8,7 @@ def xcode_command(target_name, sdk)
 end
 
 def lipo_command(target_name, libs)
-    system("mkdir #{BUILD_OUTPUT_DIR}/Release")
+    system("mkdir -p #{BUILD_OUTPUT_DIR}/Release")
     system("lipo -create #{libs.join(' ')} -output #{BUILD_OUTPUT_DIR}/lib#{target_name}Universal.a")
     system("cp #{BUILD_OUTPUT_DIR}/lib#{target_name}Universal.a #{BUILD_OUTPUT_DIR}/Release/lib#{target_name}.a")
 end
@@ -20,10 +20,16 @@ def build_target(target_name)
     lipo_command(target_name, libs)
 end
 
-system("rm -rf #{BUILD_OUTPUT_DIR}")
 
-# Base Library
-build_target('Detective')
+system("pod spec lint")
+if $?.success?
+    system("rm -rf #{BUILD_OUTPUT_DIR}")
 
-# Cocos2D Aspect
-build_target('DetectiveCocos2D')
+    # Base Library
+    build_target('Detective')
+
+    # Cocos2D Aspect
+    build_target('DetectiveCocos2D')
+else
+    puts "Podspec failed lint"    
+end
