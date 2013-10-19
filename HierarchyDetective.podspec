@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "HierarchyDetective"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "The Missing View Hierarchy Debugger"
 
   s.description  = <<-DESC
@@ -18,30 +18,22 @@ Pod::Spec.new do |s|
 
   s.author       = { "Chinmay Garde" => "chinmaygarde@gmail.com" }
 
-  s.platform     = :ios
+  s.platform     = :ios, "5.0"
   
-  s.source       = { :git => "https://github.com/chinmaygarde/hierarchydetective.git", :tag => "0.1.0" }
+  s.source       = { :git => "https://github.com/chinmaygarde/hierarchydetective.git", :tag => "0.1.1" }
 
-  s.source_files  = ['Detective/HDServer.m',
-                     'Detective/HDDetective.m',
-                     'Detective/HDUtils.m',
-                     'Detective/NSObject+HDSerialization.m',
-                     'Detective/HDMessage.m',
-                     'Detective/NSMutableArray+Queue.m',
-                     'Detective/HDArgument.m',
-                     'Detective/HDScriptArgument.m',
-                     'Detective/UIView+HDHelpers.m',
-                     'Detective/Base64/NSData+Base64.m',
-                     'Detective/Base64/NSString+Base64.m',
-                     'Detective/HDUIKitDetective.m',
-                     'Detective/HDQuartzDetective.m',
-                     'Detective/CALayer+HDHelpers.m',
-                     'Detective/NSObject+HDHelpers.m',
-                     'Detective/HDGCDAsyncSocket.m',
-                     'Detective/HDViewControllerDetective.m',
-                     'Detective/UIViewController+HDHelpers.m']
+  s.source_files  = [
+    'Detective/*.{h,m}',
+    'Detective/Base64/*.{h,m}',
+    'Detective/Aspects/ViewControllerContainment/*.{h,m}',
+  ]
   
   s.public_header_files = []
+
+  s.exclude_files = [
+    'Detective/HDScriptRunner.m',
+    'Detective/Aspects/Cocos2D/*.{h,m}',
+  ]
 
   s.frameworks = ['QuartzCore', 'CFNetwork', 'Security', 'CoreFoundation', 'UIKit', 'CoreGraphics', 'Foundation']
 
