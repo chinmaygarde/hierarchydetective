@@ -77,6 +77,10 @@
   return nil;
 }
 
+-(NSString *) remoteObjectDescription {
+    return self.description;
+}
+
 -(NSArray *) serializableProperties {
   return @[
     @"pointerValue",
@@ -85,7 +89,8 @@
     @"subviews",
     @"classHierarchy",
     @"viewControllerClass",
-    @"pathToRoot"
+    @"pathToRoot",
+    @"remoteObjectDescription",
   ];
 }
 

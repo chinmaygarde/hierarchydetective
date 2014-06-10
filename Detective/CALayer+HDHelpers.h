@@ -12,6 +12,7 @@ typedef enum :NSInteger {
 @property (nonatomic, readonly) NSArray *subviews;
 @property (nonatomic, readonly) NSString *viewControllerClass;
 @property (nonatomic, readonly) NSArray *pathToRoot;
+@property (nonatomic, readonly) NSString *remoteObjectDescription;
 
 -(NSData *) getPNGSurfaceRepresentation:(CALayerSurfaceRepresentationType) type;
 -(CALayer *) getChildWithPointerValue:(NSInteger) pointerValue;

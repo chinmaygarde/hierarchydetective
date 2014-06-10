@@ -27,6 +27,10 @@
   return (NSInteger)self;
 }
 
+-(NSString *) remoteObjectDescription {
+    return self.description;
+}
+
 -(NSString *) viewControllerClass {
   UIResponder *responder = self;
 
@@ -59,7 +63,8 @@
     @"frame",
     @"classHierarchy",
     @"viewControllerClass",
-    @"pathToRoot"
+    @"pathToRoot",
+    @"remoteObjectDescription",
   ];
 }
 

@@ -7,6 +7,7 @@
 @property (nonatomic, readonly) NSInteger pointerValue;
 @property (nonatomic, readonly) NSString *viewControllerClass;
 @property (nonatomic, readonly) NSArray *pathToRoot;
+@property (nonatomic, readonly) NSString *remoteObjectDescription;
 
 -(UIView *) getChildWithPointerValue:(NSInteger) pointerValue;
 
