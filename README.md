@@ -3,12 +3,12 @@ Hierarchy Detective
 
 1. Visit [Hierarchy Detective](http://hierarchydetective.com/) for an overview of how to use the application and library in your own projects
 2. Download the latest [release](https://github.com/chinmaygarde/hierarchydetective/releases)
-3. Once you have the Mac application, explore a [few](http://hierarchydetective.com/examples/Catalog.hdet) [sample](http://hierarchydetective.com/examples/Emoji.hdet) [traces](http://hierarchydetective.com/examples/Segments.hdet) yourself.
+3. Once you have the Mac application, explore a [few](https://raw.githubusercontent.com/chinmaygarde/hierarchydetective/gh-pages/examples/Catalog.hdet) [sample](https://raw.githubusercontent.com/chinmaygarde/hierarchydetective/gh-pages/examples/Emoji.hdet) [traces](https://raw.githubusercontent.com/chinmaygarde/hierarchydetective/gh-pages/examples/Segments.hdet) yourself.
 3. This repository contains the source for the library that needs to be linked into the application. The code for the client application will be released very soon.
 
-![Quartz Core](http://hierarchydetective.com/product/S1.png)
-![Nav Bar](http://hierarchydetective.com/product/S3.png)
-![Emoji](http://hierarchydetective.com/product/S4.png)
+![Quartz Core](https://raw.githubusercontent.com/chinmaygarde/hierarchydetective/gh-pages/product/S1.png)
+![Nav Bar](https://raw.githubusercontent.com/chinmaygarde/hierarchydetective/gh-pages/product/S3.png)
+![Emoji](https://raw.githubusercontent.com/chinmaygarde/hierarchydetective/gh-pages/product/S4.png)
 
 Getting Started
 -----------
